@@ -1,0 +1,28 @@
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
+
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-title>Reestablecer contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <div style="text-align: center;">
+      <a>Introduzca correctamente su email</a>
+    </div>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+
+    <section>
+      <ion-button color="danger" expand="block" (click)="onResetPassword()">Reestablecer</ion-button>
+    </section>
+
+</ion-content>
